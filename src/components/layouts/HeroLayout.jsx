@@ -9,11 +9,8 @@ const HeroLayout = () => {
   return (
     <>
       <Hero>
-        <Hero.Text
-          head="sketch luxury interior design"
-          desc="Bring your dream to life with one-on-one design help & hand picked products tailored to your style, space and budget."
-        ></Hero.Text>
-        <Hero.Image img={heroImg} />
+        <Hero.Text head="Lorem Ipsum Dolor Sit Amet, Constrec Posession " desc="Never at water me might. On formed merits hunted unable merely by mr whence or. Possession the unpleasing simplicity her uncommonly."></Hero.Text>
+        <Hero.Image />
       </Hero>
       <HeroBanner />
     </>

@@ -3,19 +3,14 @@ import Highlight from "../fragments/highlights/Highlight";
 import Slider from "react-slick";
 import { setting } from "../../utils/settings";
 import { HighlightData } from "../../data/datas";
-import { div } from "framer-motion/client";
 
 const HighlightLayout = () => {
   return (
     <>
       <Highlight>
         <div className="space-y-4 p-6 text-center max-w-[600px] mx-auto mb-5">
-          <h1 className="uppercase font-semibold text-orange-500">
-            our testimonial
-          </h1>
-          <p className="font-semibold text-3xl">
-            What Our Students Say About Us
-          </p>
+          <h1 className="uppercase font-semibold text-orange-500">our testimonial</h1>
+          <p className="font-semibold text-3xl">What Our Students Say About Us</p>
         </div>
         <div>
           <Slider {...setting}>

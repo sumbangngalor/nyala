@@ -9,7 +9,7 @@ import Footer from "./components/fragments/footers/Footer";
 export default function App() {
   return (
     <>
-      <main>
+      <main className="overflow-x-hidden">
         <NavLayout />
         <HeroLayout />
         <ServiceLayout />

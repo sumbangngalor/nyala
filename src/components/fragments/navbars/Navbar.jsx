@@ -4,12 +4,7 @@ import { motion } from "framer-motion";
 const Navbar = ({ children }) => {
   return (
     <>
-      <motion.nav
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="container py-4"
-      >
+      <motion.nav initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5 }} className="container py-4">
         <div className="flex justify-between items-center">{children}</div>
       </motion.nav>
     </>
@@ -19,19 +14,13 @@ const Navbar = ({ children }) => {
 const Logo = ({ img, text }) => (
   <div className="flex items-center gap-4">
     <img src={img} alt="" className="w-10" />
-    <span className="font-bold text-2xl">{text}</span>
+    <span className="font-bold text-2xl text-primary">{text}</span>
   </div>
 );
 
-const NavData = ({ children }) => (
-  <div className="hidden md:block">{children}</div>
-);
+const NavData = ({ children }) => <div className="hidden md:block">{children}</div>;
 
-const Button = ({ children }) => (
-  <button className="px-6 py-2 font-medium border-2 text-sm  border-black w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
-    {children}
-  </button>
-);
+const Button = ({ children }) => <button className="sec-btn text-white">{children}</button>;
 
 Navbar.Logo = Logo;
 Navbar.NavData = NavData;

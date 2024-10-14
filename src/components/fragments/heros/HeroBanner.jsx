@@ -15,47 +15,12 @@ const HeroBanner = () => {
         <div className="text-center py-8">
           <h1 className="text-lg font-semibold">Terintegrasi</h1>
         </div>
-        <div className="flex flex-wrap gap-6 justify-center lg:justify-between">
-          <motion.img
-            variants={SlideLeft(0.2)}
-            initial="initial"
-            whileInView={"animate"}
-            src={banner1}
-            alt=""
-            className="w-[110px]"
-          />
-          <motion.img
-            variants={SlideLeft(0.4)}
-            initial="initial"
-            whileInView={"animate"}
-            src={banner2}
-            alt=""
-            className="w-[110px]"
-          />
-          <motion.img
-            variants={SlideLeft(0.6)}
-            initial="initial"
-            whileInView={"animate"}
-            src={banner3}
-            alt=""
-            className="w-[110px]"
-          />
-          <motion.img
-            variants={SlideLeft(0.8)}
-            initial="initial"
-            whileInView={"animate"}
-            src={banner4}
-            alt=""
-            className="w-[110px]"
-          />
-          <motion.img
-            variants={SlideLeft(1.0)}
-            initial="initial"
-            whileInView={"animate"}
-            src={banner5}
-            alt=""
-            className="w-[110px]"
-          />
+        <div className="flex flex-wrap gap-6 justify-center lg:justify-between ">
+          <motion.img variants={SlideLeft(0.2)} initial="initial" whileInView={"animate"} src={banner1} alt="" className="w-[110px]" />
+          <motion.img variants={SlideLeft(0.4)} initial="initial" whileInView={"animate"} src={banner2} alt="" className="w-[110px]" />
+          <motion.img variants={SlideLeft(0.6)} initial="initial" whileInView={"animate"} src={banner3} alt="" className="w-[110px]" />
+          <motion.img variants={SlideLeft(0.8)} initial="initial" whileInView={"animate"} src={banner4} alt="" className="w-[110px]" />
+          <motion.img variants={SlideLeft(1.0)} initial="initial" whileInView={"animate"} src={banner5} alt="" className="w-[110px]" />
         </div>
       </section>
       <hr />

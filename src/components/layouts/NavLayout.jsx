@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../fragments/navbars/Navbar";
 import logo from "../../assets/logo.png";
 import { navbarData } from "../../data/datas";
+import NavbarBanner from "../fragments/navbars/NavbarBanner";
 
 const NavLayout = () => {
   return (
@@ -17,6 +18,7 @@ const NavLayout = () => {
         </Navbar.NavData>
         <Navbar.Button>MASUK</Navbar.Button>
       </Navbar>
+      <NavbarBanner />
     </>
   );
 };
