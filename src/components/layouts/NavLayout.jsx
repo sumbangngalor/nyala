@@ -11,7 +11,7 @@ const NavLayout = () => {
         <Navbar.Logo img={logo} text="Nyala" />
         <Navbar.NavData>
           {navbarData.map(({ id, title, link }) => (
-            <a key={id} href={link} className="mx-4 text-sm font-semibold">
+            <a key={id} href={link} className="mx-5 inline-block text-sm xl:text-base py-1 px-2 xl:px-3 hover:text-white  hover:bg-primary transition-all duration-300 hover:!scale-110 hover:!shadow-xl rounded-lg font-bold">
               {title}
             </a>
           ))}
