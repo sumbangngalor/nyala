@@ -7,7 +7,7 @@ const NavLayout = () => {
   return (
     <>
       <Navbar>
-        <Navbar.Logo img={logo} text="Interior" />
+        <Navbar.Logo img={logo} text="Nyala" />
         <Navbar.NavData>
           {navbarData.map(({ id, title, link }) => (
             <a key={id} href={link} className="mx-4 text-sm font-semibold">
@@ -15,7 +15,7 @@ const NavLayout = () => {
             </a>
           ))}
         </Navbar.NavData>
-        <Navbar.Button>Try For Free</Navbar.Button>
+        <Navbar.Button>MASUK</Navbar.Button>
       </Navbar>
     </>
   );
