@@ -3,6 +3,8 @@ import Highlight from "../fragments/highlights/Highlight";
 import Slider from "react-slick";
 import { setting } from "../../utils/settings";
 import { HighlightData } from "../../data/datas";
+import { motion } from "framer-motion";
+import { SlideLeft } from "../../utils/animate";
 
 const HighlightLayout = () => {
   return (
@@ -15,7 +17,7 @@ const HighlightLayout = () => {
         <div>
           <Slider {...setting}>
             {HighlightData.map(({ id, name, text, img, delay, rate }) => (
-              <div key={id}>
+              <motion.div variants={SlideLeft(delay)} initial="initial" whileInView="animate" key={id}>
                 <div className="flex flex-col gap-4 p-8 shadow-lg mx-4 rounded-xl bg-slate-600">
                   <div className="flex gap-5 justify-start items-center">
                     <Highlight.Image img={img} />
@@ -29,7 +31,7 @@ const HighlightLayout = () => {
                     <p>{rate}</p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </Slider>
         </div>

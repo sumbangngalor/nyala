@@ -1,10 +1,12 @@
 import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import React from "react";
+import { motion } from "framer-motion";
+import { SlideLeft } from "../../../utils/animate";
 
 const Footer = () => {
   return (
     <>
-      <footer className="container py-24">
+      <motion.footer variants={SlideLeft(0.2)} initial="initial" whileInView="animate" className="container py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-4">
           <div className="space-y-4 mx-auto md:m-0">
             <h1 className="text-xl font-bold">AR Shakir</h1>
@@ -59,7 +61,7 @@ const Footer = () => {
             <span className="font-light">* Will send you weekly updates for your better finance management.</span>
           </div>
         </div>
-      </footer>
+      </motion.footer>
     </>
   );
 };
