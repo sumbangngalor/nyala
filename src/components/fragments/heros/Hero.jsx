@@ -5,7 +5,7 @@ import { SlideUp } from "../../../utils/animate";
 const Hero = ({ children }) => {
   return (
     <>
-      <section className="container">
+      <section className="container pb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 md:min-h-[450px] gap-10">{children}</div>
       </section>
     </>
@@ -28,8 +28,6 @@ const Text = ({ head, desc }) => (
         Contact Us
       </motion.button>
     </div>
-
-    {/* <div className="space-x-4">{children}</div> */}
   </div>
 );
 

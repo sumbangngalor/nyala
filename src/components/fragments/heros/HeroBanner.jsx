@@ -11,8 +11,8 @@ const HeroBanner = () => {
   return (
     <>
       <hr />
-      <section className="container py-12">
-        <div className="text-center py-8">
+      <section className="container py-16">
+        <div className="text-center mb-12">
           <h1 className="text-lg font-semibold">Terintegrasi</h1>
         </div>
         <div className="flex flex-wrap gap-6 justify-center lg:justify-between ">

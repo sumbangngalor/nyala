@@ -1,5 +1,5 @@
-import Banner from "./components/fragments/banners/BannerLeft";
 import BannerRight from "./components/fragments/banners/BannerRight";
+import BannerLeft from "./components/fragments/banners/BannerLeft";
 import HeroLayout from "./components/layouts/HeroLayout";
 import NavLayout from "./components/layouts/NavLayout";
 import ServiceLayout from "./components/layouts/ServiceLayout";
@@ -12,9 +12,9 @@ export default function App() {
       <main className="overflow-x-hidden">
         <NavLayout />
         <HeroLayout />
-        <ServiceLayout />
-        <Banner />
+        <BannerLeft />
         <BannerRight />
+        <ServiceLayout />
         <HighlightLayout />
         <Footer />
       </main>

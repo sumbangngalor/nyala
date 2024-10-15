@@ -3,7 +3,7 @@ import Rusak from "../../../assets/rusak1.jpg";
 import { motion } from "framer-motion";
 import { SlideUp } from "../../../utils/animate";
 
-const Banner = () => {
+const Left = () => {
   return (
     <>
       <section className="container py-12">
@@ -28,4 +28,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default Left;
