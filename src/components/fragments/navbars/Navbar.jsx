@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ children }) => {
   return (
@@ -20,7 +21,11 @@ const Logo = ({ img, text }) => (
 
 const NavData = ({ children }) => <div className="hidden md:block">{children}</div>;
 
-const Button = ({ children }) => <button className="sec-btn text-white">{children}</button>;
+const Button = ({ children }) => (
+  <a href="https://app.nyala.my.id/signin">
+    <button className="sec-btn text-white">{children}</button>
+  </a>
+);
 
 Navbar.Logo = Logo;
 Navbar.NavData = NavData;
